@@ -33,6 +33,7 @@
   box-shadow: 0 0.3rem 2rem 0 rgba(0, 0, 0, 0.2);
   padding-block: 1rem;
   font-family: var(--font-secondary);
+  z-index: 999;
 }
 .header .navbar-toggler {
   box-shadow: none;
