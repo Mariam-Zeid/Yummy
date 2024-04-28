@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
     "--color-light-grey": "#252525",
   };
   const darkModeToggle = document.querySelector("#toggle-mode");
-
   darkModeToggle.addEventListener("click", () => {
     if (darkModeToggle.checked) {
       for (const [variable, color] of Object.entries(darkTheme)) {
@@ -51,4 +50,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ?============== Active wow.js ==============?
   new WOW().init();
+
+  // ?============== Scroll back to the top ==============?
+  $(window).scroll(function () {
+    let scrollTop = $(window).scrollTop();
+    if (scrollTop != 0) {
+      $("#goToTop").fadeIn(500);
+      $("#goToTop").css({ display: "flex" });
+    } else {
+      $("#goToTop").fadeOut(500);
+    }
+  });
+  $("#goToTop").click(function () {
+    $("body, html").animate({ scrollTop: 0 }, 200);
+  });
 });

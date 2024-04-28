@@ -1,4 +1,19 @@
 /* ?========================== COMPONENTS ==========================? */
+#goToTop {
+  display: none;
+  text-decoration: none;
+  font-size: 1.4rem;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  color: var(--color-light);
+  background-color: var(--color-primary);
+  z-index: 99999;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
 .sect-pd {
   padding-block: 5rem;
 }
