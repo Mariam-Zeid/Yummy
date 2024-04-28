@@ -1,3 +1,12 @@
-#hero .animate__delay-2s {
+#hero .animate__delay {
   animation-delay: .3s;
+}
+#about .animate__duration {
+  animation-duration: 1.5s;
+}
+#about .animate__delay:first-child {
+  animation-delay: .2s;
+}
+#about .animate__delay:last-child {
+  animation-delay: .4s;
 }

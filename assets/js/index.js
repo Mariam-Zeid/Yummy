@@ -1,8 +1,11 @@
-document.addEventListener('DOMContentLoaded', ()=>{
+document.addEventListener("DOMContentLoaded", () => {
   // ?============== Active class in header ==============?
   $(".header .nav-link").click(function (e) {
-    $(e.target).addClass("active");
-    $(".nav-link").not(e.target).removeClass("active");
+    $(this).addClass("active");
+    $(".nav-link").not(this).removeClass("active");
+    const href = $(this).attr("href");
+    // Navigate to the specified path
+    window.location.href = href;
     e.preventDefault();
   });
 
@@ -45,4 +48,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       }
     }
   });
-})
+
+  // ?============== Active wow.js ==============?
+  new WOW().init();
+});
