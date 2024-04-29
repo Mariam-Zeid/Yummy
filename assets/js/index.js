@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ?============== counter ==============?
   $(".stats-counter").counterUp({
     delay: 10,
-    time: 1000,
+    time: 1500,
   });
 
   // ?============== Scroll back to the top ==============?
