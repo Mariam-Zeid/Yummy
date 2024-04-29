@@ -330,3 +330,27 @@
   color: #6c757d;
   line-height: 1.5;
 }
+
+/* ?========================== COUNTER SECTION ==========================? */
+.counter-section {
+  padding-block: 6.25rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/Counter\ Section/stats-bg.jpg) center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.counter-section .stats-item {
+  padding: 1.875rem;
+}
+.counter-section .stats-item .stats-counter {
+  font-size: 48px;
+  display: block;
+  color: #fff;
+  font-weight: 700;
+}
+.counter-section .stats-item .stats-paragrapgh {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  margin-block: .7rem;
+}

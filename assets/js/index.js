@@ -51,6 +51,12 @@ document.addEventListener("DOMContentLoaded", () => {
   // ?============== Active wow.js ==============?
   new WOW().init();
 
+  // ?============== counter ==============?
+  $(".stats-counter").counterUp({
+    delay: 10,
+    time: 1000,
+  });
+
   // ?============== Scroll back to the top ==============?
   $(window).scroll(function () {
     let scrollTop = $(window).scrollTop();
