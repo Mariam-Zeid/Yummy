@@ -1,10 +1,10 @@
 #hero .animate__delay {
   animation-delay: .3s;
 }
-#about .animate__duration {
+#about .animate__duration, .why-choose-yummy .animate__delay {
   animation-duration: 1.6s;
 }
-#about .animate__delay:first-child {
+#about .animate__delay:first-child, .why-choose-yummy .animate__delay{
   animation-delay: .2s;
 }
 #about .animate__delay:last-child {
