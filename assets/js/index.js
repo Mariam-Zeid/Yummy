@@ -70,4 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
   $("#goToTop").click(function () {
     $("body, html").animate({ scrollTop: 0 }, 200);
   });
+
+  // ?============== Set modal image ==============?
+  $(".menu-item-img").click(function(e){
+    const imgPath = $(this).attr("src");
+    console.log(imgPath);
+    $("#menuModalImage").attr('src', imgPath);
+  })
+
 });

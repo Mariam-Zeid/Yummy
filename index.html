@@ -62,7 +62,7 @@
                 <a class="nav-link" href="#about">about</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">menu</a>
+                <a class="nav-link" href="#menu">menu</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">events</a>
@@ -194,7 +194,7 @@
     <section class="why-choose-yummy sect-bg sect-pd">
       <div class="container">
         <div class="row gy-4">
-          <div class="col-lg-4 animate__animated animate__fadeInUp wow">
+          <div class="col-lg-4 animate__animated animate__fadeInUp animate__delay animate__duration wow">
             <div class="choose-primary-card d-flex flex-column gap-5">
               <h4 class="card-title text-capitalize">why choose yummy?</h4>
               <p class="card-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -206,7 +206,7 @@
           </div>
           <div class="col-lg-8 d-flex align-items-center">
             <div class="row gy-4">
-              <div class="col-xl-4 animate__animated animate__fadeInUp wow">
+              <div class="col-xl-4 animate__animated animate__fadeInUp animate__delay animate__duration wow">
                 <div class="choose-card d-flex flex-column align-items-center gap-4">
                   <i class="fa-regular fa-clipboard card-icon"></i>
                   <h5 class="card-title">Corporis voluptates officia eiusmod</h5>
@@ -214,7 +214,7 @@
                     aliquip</p>
                 </div>
               </div>
-              <div class="col-xl-4 animate__animated animate__fadeInUp wow">
+              <div class="col-xl-4 animate__animated animate__fadeInUp animate__delay animate__duration wow">
                 <div class="choose-card d-flex flex-column align-items-center gap-4">
                   <i class="fa-regular fa-gem  card-icon"></i>
                   <h5 class="card-title">Ullamco laboris ladore pan</h5>
@@ -222,7 +222,7 @@
                     deserunt</p>
                 </div>
               </div>
-              <div class="col-xl-4 animate__animated animate__fadeInUp wow">
+              <div class="col-xl-4 animate__animated animate__fadeInUp animate__delay animate__duration wow">
                 <div class="choose-card d-flex flex-column align-items-center gap-4">
                   <i class="fa-solid fa-inbox card-icon"></i>
                   <h5 class="card-title">Labore consequatur incidid dolore</h5>
@@ -269,6 +269,145 @@
       </div>
     </section>
 
+    <!-- ?===================== Menu Section =====================? -->
+    <section id="menu" class="menu-section sect-pd">
+      <div class="container">
+        <div class="section-heading-wrapper text-center text-uppercase animate__animated animate__fadeInUp wow">
+          <h3 class="heading-tertiary">our menu</h3>
+          <h2 class="heading-secondary">
+            check our
+            <span class="sub-heading-secondary">yummy menu</span>
+          </h2>
+        </div>
+
+        <div class="menu-container">
+          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="starter-tab" data-bs-toggle="tab" data-bs-target="#starter-tab-pane"
+                type="button" role="tab" aria-controls="starter-tab-pane" aria-selected="true">starters</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="breakfast-tab" data-bs-toggle="tab" data-bs-target="#breakfast-tab-pane"
+                type="button" role="tab" aria-controls="breakfast-tab-pane" aria-selected="false">breakfast</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="lunch-tab" data-bs-toggle="tab" data-bs-target="#lunch-tab-pane"
+                type="button" role="tab" aria-controls="clunchtab-pane" aria-selected="false">lunch</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="dinner-tab" data-bs-toggle="tab" data-bs-target="#dinner-tab-pane"
+                type="button" role="tab" aria-controls="dinner-tab-pane" aria-selected="false">dinner</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="starter-tab-pane" role="tabpanel" aria-labelledby="starter-tab"
+              tabindex="0">
+              <div class="menu-title text-center">
+                <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
+                <h2 class="menu-primary-heading text-capitalize">starters</h2>
+              </div>
+              <div class="menu-options">
+                <div class="row gy-5">
+                  <!-- Modal -->
+                  <div class="modal fade my-0" id="menuModal" tabindex="-1" aria-hidden="true">
+                    <span class="close-modal position-fixed top-0 end-0 px-5 py-4" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="modal-dialog my-0">
+                      <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body p-0 ">
+                          <img alt="" class="w-100" id="menuModalImage">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-1.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <h3 class="menu-item-title text-capitalize">magnam tiste</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$5.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-2.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <h3 class="menu-item-title text-capitalize">aut luia</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$14.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-3.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <h3 class="menu-item-title text-capitalize">est eligendi</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$8.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-5.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <h3 class="menu-item-title text-capitalize">laboriosam direva</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$9.95</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="breakfast-tab-pane" role="tabpanel" aria-labelledby="breakfast-tab"
+              tabindex="0">
+              <div class="menu-title text-center">
+                <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
+                <h2 class="menu-primary-heading text-capitalize">breakfast</h2>
+              </div>
+              <div class="menu-options"></div>
+            </div>
+            <div class="tab-pane fade" id="lunch-tab-pane" role="tabpanel" aria-labelledby="lunch-tab" tabindex="0">
+              <div class="menu-title text-center">
+                <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
+                <h2 class="menu-primary-heading text-capitalize">lunch</h2>
+              </div>
+              <div class="menu-options"></div>
+            </div>
+            <div class="tab-pane fade" id="dinner-tab-pane" role="tabpanel" aria-labelledby="dinner-tab" tabindex="0">
+              <div class="menu-title text-center">
+                <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
+                <h2 class="menu-primary-heading text-capitalize">dinner</h2>
+              </div>
+              <div class="menu-options"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ?===================== Footer =====================? -->
@@ -282,10 +421,10 @@
   <!-- ?===================== jQuery =====================? -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-  <!-- ?===================== Wow Plugin =====================? --> 
+  <!-- ?===================== Wow Plugin =====================? -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-  
-  <!-- ?===================== Counter =====================? --> 
+
+  <!-- ?===================== Counter =====================? -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
 
