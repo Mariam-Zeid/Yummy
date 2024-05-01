@@ -8,8 +8,15 @@ body {
   font-weight: 400;
   line-height: 1;
   overflow-x: hidden;
+  overflow-y: scroll;
   transition: all 0.3s;
 }
+
+/* Hide scrollbar */
+body::-webkit-scrollbar {
+    display: none;
+}
+
 
 ::selection {
   background-color: hsl(
