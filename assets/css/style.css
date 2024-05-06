@@ -67,7 +67,7 @@
   text-decoration: none;
 }
 .modal {
-  background-color: rgba(0, 0, 0, .92);
+  background-color: rgba(0, 0, 0, 0.92);
   padding-inline: calc(100vw - 100%);
 }
 .modal .modal-dialog {
@@ -89,6 +89,19 @@
 .modal .close-modal {
   color: #ccc;
   font-size: 2.2rem;
+  cursor: pointer;
+}
+.modal-image {
+  width: 100%;
+}
+.modal-body .carousel-item {
+  text-align: center;
+}
+.carousel-control-prev {
+  left: -20%;
+}
+.carousel-control-next {
+  right: -20%;
 }
 
 /* ?========================== HEADER ==========================? */

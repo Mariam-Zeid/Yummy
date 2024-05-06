@@ -71,11 +71,23 @@ document.addEventListener("DOMContentLoaded", () => {
     $("body, html").animate({ scrollTop: 0 }, 200);
   });
 
-  // ?============== Set modal image ==============?
-  $(".menu-item-img").click(function(e){
-    const imgPath = $(this).attr("src");
-    console.log(imgPath);
-    $("#menuModalImage").attr('src', imgPath);
-  })
-
+  // ?============== Set modal gallery ==============?
+  const modalGallery = (tabPane, modalID) => {
+    const menuImages = document.querySelectorAll(`#${tabPane} .menu-item .menu-item-img`);
+    menuImages.forEach(function (menuImage) {
+      menuImage.addEventListener('click', function () {
+        const index = this.getAttribute('data-index');
+        $(`#${modalID} .carousel-item`).removeClass('active');
+        $(`#${modalID} .carousel-item`).eq(index).addClass('active');
+      });
+    });
+  }
+  // For the Starters tab
+  modalGallery('starter-tab-pane', 'starterMenuModal')
+  // For the Breakfast tab
+  modalGallery('breakfast-tab-pane', 'breakfastMenuModal')
+  // For the Lunch tab
+  modalGallery('lunch-tab-pane', 'lunchMenuModal')
+  // For the Dinner tab
+  modalGallery('dinner-tab-pane', 'dinnerMenuModal')
 });

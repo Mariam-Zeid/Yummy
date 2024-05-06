@@ -28,6 +28,15 @@
     font-size: 1rem;
     padding: 0.625rem 0rem;
   }
+  .modal-image {
+    width: 75%;
+  }
+  .carousel-control-prev {
+  left: 0%;
+}
+.carousel-control-next {
+  right: 0%;
+}
 }
 
 /* Portrait phones and smaller */

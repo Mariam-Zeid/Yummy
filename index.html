@@ -281,7 +281,7 @@
         </div>
 
         <div class="menu-container">
-          <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+          <ul class="nav nav-tabs justify-content-center animate__animated animate__fadeInUp animate__delay-1s wow" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button class="nav-link active" id="starter-tab" data-bs-toggle="tab" data-bs-target="#starter-tab-pane"
                 type="button" role="tab" aria-controls="starter-tab-pane" aria-selected="true">starters</button>
@@ -300,7 +300,7 @@
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="starter-tab-pane" role="tabpanel" aria-labelledby="starter-tab"
+            <div class="tab-pane fade show active animate__animated animate__fadeInUp animate__delay-1s animate__duration wow" id="starter-tab-pane" role="tabpanel" aria-labelledby="starter-tab"
               tabindex="0">
               <div class="menu-title text-center">
                 <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
@@ -308,20 +308,48 @@
               </div>
               <div class="menu-options">
                 <div class="row gy-5">
-                  <!-- Modal -->
-                  <div class="modal fade my-0" id="menuModal" tabindex="-1" aria-hidden="true">
-                    <span class="close-modal position-fixed top-0 end-0 px-5 py-4" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+                  <div class="modal fade my-0" id="starterMenuModal" tabindex="-1" aria-hidden="true">
+                    <span class="close-modal position-fixed top-0 end-0 px-lg-5 px-3 py-4" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
                     <div class="modal-dialog my-0">
                       <div class="modal-content bg-transparent border-0">
                         <div class="modal-body p-0 ">
-                          <img alt="" class="w-100" id="menuModalImage">
+                          <div id="starterCarousel" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-1.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-2.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-3.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-4.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-5.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-6.png" class="modal-image" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#starterCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#starterCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-4">
                     <div class="menu-item text-center">
-                      <img src="assets/img/Menu Section/menu-item-1.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <img src="assets/img/Menu Section/menu-item-1.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#starterMenuModal" data-index="0">
                       <h3 class="menu-item-title text-capitalize">magnam tiste</h3>
                       <p class="menu-item-paragraph">
                         Lorem, deren, trataro, filede, nerada
@@ -331,7 +359,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="menu-item text-center">
-                      <img src="assets/img/Menu Section/menu-item-2.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <img src="assets/img/Menu Section/menu-item-2.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#starterMenuModal" data-index="1">
                       <h3 class="menu-item-title text-capitalize">aut luia</h3>
                       <p class="menu-item-paragraph">
                         Lorem, deren, trataro, filede, nerada
@@ -341,7 +369,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="menu-item text-center">
-                      <img src="assets/img/Menu Section/menu-item-3.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <img src="assets/img/Menu Section/menu-item-3.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#starterMenuModal" data-index="2">
                       <h3 class="menu-item-title text-capitalize">est eligendi</h3>
                       <p class="menu-item-paragraph">
                         Lorem, deren, trataro, filede, nerada
@@ -351,7 +379,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="menu-item text-center">
-                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#starterMenuModal" data-index="3">
                       <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
                       <p class="menu-item-paragraph">
                         Lorem, deren, trataro, filede, nerada
@@ -361,7 +389,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="menu-item text-center">
-                      <img src="assets/img/Menu Section/menu-item-5.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <img src="assets/img/Menu Section/menu-item-5.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#starterMenuModal" data-index="4">
                       <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
                       <p class="menu-item-paragraph">
                         Lorem, deren, trataro, filede, nerada
@@ -371,7 +399,7 @@
                   </div>
                   <div class="col-lg-4">
                     <div class="menu-item text-center">
-                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#menuModal">
+                      <img src="assets/img/Menu Section/menu-item-6.png" alt="menu-item" class="menu-item-img w-100" data-bs-toggle="modal" data-bs-target="#starterMenuModal" data-index="5">
                       <h3 class="menu-item-title text-capitalize">laboriosam direva</h3>
                       <p class="menu-item-paragraph">
                         Lorem, deren, trataro, filede, nerada
@@ -382,27 +410,363 @@
                 </div>
               </div>
             </div>
+
             <div class="tab-pane fade" id="breakfast-tab-pane" role="tabpanel" aria-labelledby="breakfast-tab"
               tabindex="0">
               <div class="menu-title text-center">
                 <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
                 <h2 class="menu-primary-heading text-capitalize">breakfast</h2>
               </div>
-              <div class="menu-options"></div>
+              <div class="menu-options">
+                <div class="row gy-5">
+                  <div class="modal fade my-0" id="breakfastMenuModal" tabindex="-1" aria-hidden="true">
+                    <span class="close-modal position-fixed top-0 end-0 px-lg-5 px-3 py-4" data-bs-dismiss="modal"
+                      aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="modal-dialog my-0">
+                      <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body p-0 ">
+                          <div id="breakfastCarousel" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-1.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-2.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-3.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-4.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-5.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-6.png" class="modal-image" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#breakfastCarousel"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#breakfastCarousel"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-1.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#breakfastMenuModal" data-index="0">
+                      <h3 class="menu-item-title text-capitalize">magnam tiste</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$5.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-2.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#breakfastMenuModal" data-index="1">
+                      <h3 class="menu-item-title text-capitalize">aut luia</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$14.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-3.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#breakfastMenuModal" data-index="2">
+                      <h3 class="menu-item-title text-capitalize">est eligendi</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$8.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#breakfastMenuModal" data-index="3">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-5.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#breakfastMenuModal" data-index="4">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-6.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#breakfastMenuModal" data-index="5">
+                      <h3 class="menu-item-title text-capitalize">laboriosam direva</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$9.95</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="tab-pane fade" id="lunch-tab-pane" role="tabpanel" aria-labelledby="lunch-tab" tabindex="0">
               <div class="menu-title text-center">
                 <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
                 <h2 class="menu-primary-heading text-capitalize">lunch</h2>
               </div>
-              <div class="menu-options"></div>
+
+              <div class="menu-options">
+                <div class="row gy-5">
+                  <div class="modal fade my-0" id="lunchMenuModal" tabindex="-1" aria-hidden="true">
+                    <span class="close-modal position-fixed top-0 end-0 px-lg-5 px-3 py-4" data-bs-dismiss="modal"
+                      aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="modal-dialog my-0">
+                      <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body p-0 ">
+                          <div id="lunchCarousel" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-1.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-2.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-3.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center active">
+                                <img src="assets/img/Menu Section/menu-item-4.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-5.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-6.png" class="modal-image" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#lunchCarousel"
+                              data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#lunchCarousel"
+                              data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-1.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#lunchMenuModal" data-index="0">
+                      <h3 class="menu-item-title text-capitalize">magnam tiste</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$5.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-2.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#lunchMenuModal" data-index="1">
+                      <h3 class="menu-item-title text-capitalize">aut luia</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$14.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-3.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#lunchMenuModal" data-index="2">
+                      <h3 class="menu-item-title text-capitalize">est eligendi</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$8.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#lunchMenuModal" data-index="3">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-5.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#lunchMenuModal" data-index="4">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-6.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#lunchMenuModal" data-index="5">
+                      <h3 class="menu-item-title text-capitalize">laboriosam direva</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$9.95</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
             <div class="tab-pane fade" id="dinner-tab-pane" role="tabpanel" aria-labelledby="dinner-tab" tabindex="0">
               <div class="menu-title text-center">
                 <h3 class="menu-secondary-heading text-capitalize mb-0">menu</h3>
                 <h2 class="menu-primary-heading text-capitalize">dinner</h2>
               </div>
-              <div class="menu-options"></div>
+
+              <div class="menu-options">
+                <div class="row gy-5">
+                  <div class="modal fade my-0" id="dinnerMenuModal" tabindex="-1" aria-hidden="true">
+                    <span class="close-modal position-fixed top-0 end-0 px-lg-5 px-3 py-4" data-bs-dismiss="modal"
+                      aria-label="Close"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="modal-dialog my-0">
+                      <div class="modal-content bg-transparent border-0">
+                        <div class="modal-body p-0 ">
+                          <div id="dinnerCarousel" class="carousel slide">
+                            <div class="carousel-inner">
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-1.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-2.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-3.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-4.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-5.png" class="modal-image" alt="...">
+                              </div>
+                              <div class="carousel-item text-center">
+                                <img src="assets/img/Menu Section/menu-item-6.png" class="modal-image" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#dinnerCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#dinnerCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-1.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#dinnerMenuModal" data-index="0">
+                      <h3 class="menu-item-title text-capitalize">magnam tiste</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$5.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-2.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#dinnerMenuModal" data-index="1">
+                      <h3 class="menu-item-title text-capitalize">aut luia</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$14.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-3.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#dinnerMenuModal" data-index="2">
+                      <h3 class="menu-item-title text-capitalize">est eligendi</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$8.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-4.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#dinnerMenuModal" data-index="3">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-5.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#dinnerMenuModal" data-index="4">
+                      <h3 class="menu-item-title text-capitalize">eos luibusdam</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$12.95</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="menu-item text-center">
+                      <img src="assets/img/Menu Section/menu-item-6.png" alt="menu-item" class="menu-item-img w-100"
+                        data-bs-toggle="modal" data-bs-target="#dinnerMenuModal" data-index="5">
+                      <h3 class="menu-item-title text-capitalize">laboriosam direva</h3>
+                      <p class="menu-item-paragraph">
+                        Lorem, deren, trataro, filede, nerada
+                      </p>
+                      <p class="menu-item-price">$9.95</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
