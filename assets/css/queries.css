@@ -32,11 +32,23 @@
     width: 75%;
   }
   .carousel-control-prev {
-  left: 0%;
-}
-.carousel-control-next {
-  right: 0%;
-}
+    left: 0%;
+  }
+  .carousel-control-next {
+    right: 0%;
+  }
+  .carousel-indicators {
+    bottom: -10%;
+  }
+  #testimonials
+    #testimonialsCarousel
+    .testimonial-item
+    .testimonial-content-box::before {
+    left: 0%;
+  }
+  #testimonials #testimonialsCarousel .testimonial-item .testimonial-content-box {
+    padding-left: 1.3rem;
+  }
 }
 
 /* Portrait phones and smaller */

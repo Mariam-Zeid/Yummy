@@ -470,7 +470,7 @@
 }
 #testimonials #testimonialsCarousel .testimonial-item .testimonial-content-box::before {
   content: '';
-  width: 0.4%;
+  width: .25rem;
   height: 100%;
   background-color: var(--color-primary);
   position: absolute;
