@@ -2,11 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // ?============== Active class in header ==============?
   $(".header .nav-link").click(function (e) {
     $(this).addClass("active");
-    $(".nav-link").not(this).removeClass("active");
-    const href = $(this).attr("href");
-    // Navigate to the specified path
-    window.location.href = href;
-    e.preventDefault();
+    $(".header .nav-link").not(this).removeClass("active");
   });
 
   // ?============== Dark and Light Mode ==============?
