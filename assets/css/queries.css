@@ -3,11 +3,17 @@
 }
 
 /* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
 }
 
 /* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
+  #testimonials .carousel-indicators {
+    bottom: -5%;
+  }
+  #events .carousel-indicators {
+    bottom: -8.5%;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -37,7 +43,10 @@
   .carousel-control-next {
     right: 0%;
   }
-  .carousel-indicators {
+  #testimonials .carousel-indicators {
+    bottom: -8%;
+  }
+  #events .carousel-indicators {
     bottom: -10%;
   }
   #testimonials
@@ -46,7 +55,10 @@
     .testimonial-content-box::before {
     left: 0%;
   }
-  #testimonials #testimonialsCarousel .testimonial-item .testimonial-content-box {
+  #testimonials
+    #testimonialsCarousel
+    .testimonial-item
+    .testimonial-content-box {
     padding-left: 1.3rem;
   }
 }
