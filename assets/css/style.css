@@ -517,18 +517,18 @@
   background-color: #2b2b2b;
   min-height: 37.5rem;
 }
-#events .row > .col-lg-4:nth-child(1) .event-wrapper, #events .carousel-item:nth-child(1) .event-wrapper {
-
+#events .row > .col-lg-4:nth-child(1) .event-wrapper,
+#events .carousel-item:nth-child(1) .event-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/Events\ Section/events-1.jpg) left;
 }
-#events .row > .col-lg-4:nth-child(2) .event-wrapper, #events .carousel-item:nth-child(2) .event-wrapper {
-
+#events .row > .col-lg-4:nth-child(2) .event-wrapper,
+#events .carousel-item:nth-child(2) .event-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/Events\ Section/events-2.jpg) left;
 }
-#events .row > .col-lg-4:nth-child(3) .event-wrapper, #events .carousel-item:nth-child(3) .event-wrapper {
-
+#events .row > .col-lg-4:nth-child(3) .event-wrapper,
+#events .carousel-item:nth-child(3) .event-wrapper {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url(../img/Events\ Section/events-3.jpg) left;
 }
@@ -551,4 +551,58 @@
 #events .event-wrapper .event-description {
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
+}
+
+/* ?========================== CHEFS SECTION ==========================? */
+.chef-wrapper {
+  background-color: var(--color-light);
+  transition: transform 0.4s;
+  box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
+}
+.chef-wrapper:hover {
+  transform: scale(1.05);
+}
+.chef-wrapper .chef-details {
+  padding: 0.625rem 0.9375rem 1.25rem 0.9375rem;
+}
+.chef-wrapper .chef-details .chef-name {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: var(--color-secondary);
+}
+.chef-wrapper .chef-details .chef-title {
+  color: var(--color-tertiary);
+  font-family: var(--font-default);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.chef-wrapper .chef-details .chef-description {
+  color: var(--color-tertiary);
+  font-style: italic;
+  font-family: var(--font-default);
+  font-size: 14px;
+  line-height: 1.5;
+  padding-top: 0.3125rem;
+}
+.chef-wrapper .social-box {
+  list-style: none;
+  gap: 1rem;
+  font-size: 1.5rem;
+  background-color: #ffffff4d;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  top: 3%;
+  right: -100%;
+  transition: all 0.8s 0.01s;
+}
+.chef-wrapper:hover .social-box {
+  right: 0;
+}
+.chef-wrapper:hover .social-box i {
+  color: #37373f66;
+}
+.chef-wrapper:hover .social-box i:hover {
+  color: #37373fe6;
 }
