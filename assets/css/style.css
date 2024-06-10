@@ -666,3 +666,21 @@
   background: var(--color-primary);
   padding: 10px 30px;
 }
+
+/* ?========================== FOOTER ==========================? */
+#footer {
+  --alt-background-color: #1f1f24;
+  --footer-background-color: var(--alt-background-color);
+  --default-color: #ffff;
+  --heading-color: #ffff;
+  --heading-font: var(--default-font);
+  color: var(--default-color);
+  background-color: var(--footer-background-color);
+  font-size: 14px;
+  padding: 40px 0;
+  position: relative;
+}
+#footer a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
