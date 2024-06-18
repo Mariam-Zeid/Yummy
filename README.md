@@ -1,2 +1,3 @@
 # Yummy
-Yummy is a fully responsive lightweight restaurant website 
+ 
+[Yummy](https://yummy-mz.netlify.app/) is a fully responsive lightweight restaurant website 
